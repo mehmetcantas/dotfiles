@@ -62,6 +62,10 @@ lspconfig["html"].setup({
   on_attach = on_attach,
 })
 
+lspconfig["pyright"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
 -- configure typescript server with plugin
 typescript.setup({
   server = {
@@ -134,14 +138,18 @@ lspconfig["gopls"].setup({
   },
 })
 
+lspconfig["omnisharp"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 -- configure emmet language server
 lspconfig["emmet_ls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
   filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
 })
-
-lspconfig["omnisharp"].setup({
+lspconfig["yamlls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })

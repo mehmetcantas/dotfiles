@@ -30,7 +30,8 @@ mason_lspconfig.setup({
     "emmet_ls",
     "gopls",
     "omnisharp",
-    "csharpier",
+    "yamlls",
+    "pyright",
   },
   -- auto-install configured servers (with lspconfig)
   automatic_installation = true, -- not the same as ensure_installed
@@ -45,7 +46,6 @@ mason_null_ls.setup({
     "gofumpt",
     "goimports_reviser",
     "golines",
-    "csharpier",
   },
   -- auto-install configured formatters & linters (with null-ls)
   automatic_installation = true,
